@@ -1,19 +1,29 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import { foods } from "../../../Data/FoodData";
 import './sectionmenu.css';
 
 export const BlackSection = () => {
+
+    const [mainFood, setMainFood] = useState([]);
+
+    useEffect(() => {
+      setMainFood(foods);
+    }, []);
+
+    const {id, image, mainFoodCode,url} = mainFood;
+
     return (
         <div className="row">
                <div className="col-lg-6">
                     <img 
-                        src="/youthfulness/almuerzo.jpg" 
-                        alt="Lunches"
+                        src={image} 
+                        alt={mainFoodCode}
                     />
                 </div>
                 <div className="col-lg-6 ">
                     <div className="titles1">
-                    Lunches 
+                    {mainFoodCode} 
                     <hr/>
                     </div>
                     
@@ -22,7 +32,7 @@ export const BlackSection = () => {
                     </p>
                     <div className="btn-content">
                         <Link
-                            to ="/lunches"
+                            to ={url}
                             className="btn"
                         >    
                             Get start it

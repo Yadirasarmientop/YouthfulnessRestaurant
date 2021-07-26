@@ -5,6 +5,8 @@ import { SectionMenu } from './sectionMenu/SectionMenu';
 import './sectionMenu/sectionmenu.css';
 
 export const HomeScreen = () => {
+   
+
     return (
         <div className="container-fluid">
             <SectionBanner />
