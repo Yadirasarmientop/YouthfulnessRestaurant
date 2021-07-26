@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+header {
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+img {
+    height: 50px;  
+}
+
+
+.logo-holder {
+    margin: 20px 40px;
+    flex:0.95;
+    display: flex;
+     cursor: pointer;  
+    
+   
+}
+
+.nav-link:hover{
+    opacity: 60%;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo h1 {
+    font-family: 'Fuggles', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: #0d4780;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+
+.nav-navbar {
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+.nav-link {
+    font-family: 'Raleway', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    color:#56687b;;
+    padding: 10px 10px;
+    border-radius: 1.5em;
+
+}
+
+.nav-navbar-collapse{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.active {
+    color:#242121;  
+    background-color: #3386da;;
+    color: white;
+    font-weight: bold;
+}
+
+

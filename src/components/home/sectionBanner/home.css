@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.slide{
+    height: 500px;
+    display: flex;
+    position: relative;
+
+}
+
+.image{
+    flex:1;
+    background-image: url('/youthfulness/restaurant.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    
+}
+
+.image::after{
+    content:"";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    bottom: 0;
+    right:0;
+    background-image: url('/youthfulness/Recurso1.svg');
+    background-repeat: no-repeat;
+    background-position:right;
+    
+}
+
+.content-holder {
+    flex:6.5;
+    color: white;
+    text-align: center;
+}
+.content{
+    flex: 1;
+    position: absolute;
+    left: 55%;
+    right: 0;
+    top: 40%;
+    bottom: 0;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+.title {
+    font-size: 35px;
+    line-height: 1em;
+    font-family: 'Raleway','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color:rgb(217, 237, 255);
+    
+}
