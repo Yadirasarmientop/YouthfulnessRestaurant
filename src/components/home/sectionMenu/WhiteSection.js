@@ -1,29 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-
-
 import './sectionmenu.css';
 
-export const WhiteSection = ({id}) => {
+export const WhiteSection = ({food}) => {
     
 
-   
     return (
         
         <div className="row-white">
         
             <div className="col-lg-6 content-title">
                 <div className="titles">
-                Breakfasts 
+                {food.mainFoodCode}
                 <hr/>
                 </div>
                 
                 <p>
-                Lorem ipsum dolor sit amet, consectetuer adipis cing elit.
+                {food.description}
                 </p>
                 <div className="btn-content">
                     <Link
-                        to ="/breakfasts"
+                        to = {food.url}
                         className="btn"
                     >    
                         Get start it
@@ -32,8 +29,8 @@ export const WhiteSection = ({id}) => {
             </div>
             <div className="col-lg-6">
                 <img 
-                    src="/youthfulness/breakfast.jpg" 
-                    alt="Breakfasts"
+                    src={food.image}
+                    alt={food.mainFoodCode}
                 />
             </div>
         </div>
